@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box header">
+                <nav class="containerNav">
+                    <div class="navCenter">
+                        <a href="#" class="me">Skills</a>
+                        <a href="#" class="me">Contact</a>
+                        <a href="#" class="me">About me</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="box sidebar">Sidebar</div>
+            <div class="box sidebar2">Sidebar 2</div>
+            <div class="box content">Content
+                <br /> More content than we had before so this column is now
+                quite tall.</div>
+                <div class="box sidebar3">Sidebar</div>
+            <div class="box sidebar23">Sidebar 2</div>
+            <div class="box content3">Content
+                <br /> More content than we had before so this column is now
+                quite tall.</div>
+        </div>
+    </body>
+    <style>
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+.sidebar {
+        grid-area: sidebar;
+    }
+
+    .sidebar2 {
+        grid-area: sidebar2;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .wrapper {
+        background-color: #fff;
+        color: #444;
+    }
+
+  .wrapper {
+    justify-self: center;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "sidebar2"
+     "sidebar3"
+     "content3"
+     "sidebar23";
+  }
+
+    @media only screen and (min-width: 500px)  {
+    .wrapper {
+
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+        "header   header"
+        "sidebar  content"
+        "sidebar2 sidebar2";
+        }
+    }
+
+    @media only screen and (min-width: 600px)   {
+        .wrapper {
+      grid-gap: 20px;
+            grid-template-columns: 120px auto 120px;
+            grid-template-areas:
+            "header  header  header"
+            "sidebar content sidebar2";
+        }
+    }
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;  
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+.sidebar2 {
+  background-color: #ccc;
+  color: #444;
+}
+
+
+nav {
+  display: -ms-inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid black;
+  padding: 3vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav{
+        padding: 15vh;
+    }
+    .navCenter a{
+        font-size: 3vh;
+        margin: 5vh;
+    } 
+}  
+
+@media screen and (max-width: 500px) {
+    .nav{
+        padding: 15vh;
+    }
+    .navCenter a{
+        font-size: 3vh !important;
+        margin: 2vh !important;
+    }
+    
+}  
+
+.navCenter {
+  grid-column: 3;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navCenter a{
+    font-size: 3vh;
+    margin: 5vh;
+}
+
+
+
+    </style>
+</html>
