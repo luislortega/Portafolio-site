@@ -12,7 +12,7 @@
     </head>
     <body>
         <div id="app">
-            <v-app style="background: white !important;">
+            <v-app style="background: white;">
                 <v-navigation-drawer
                     v-model="drawer"
                     clipped
@@ -33,7 +33,15 @@
                                 <v-icon>settings</v-icon>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                                <v-list-tile-title>Settings</v-list-tile-title>
+                                <v-list-tile-title>Personal Blog</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile @click="">
+                            <v-list-tile-action>
+                                <v-icon>settings</v-icon>
+                            </v-list-tile-action>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Youtube chanel</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>
@@ -46,47 +54,119 @@
                 <v-content>
                     <v-container fill-height grid-list-md>
                         <v-layout justify-center
-                            align-center row wrap>
+                            align-center row wrap xs12>
                             <v-flex xs12 xl6>
-                                <p class="display-3 font-weight-medium">What up!
-                                    bruh ✌</p>
+                                <p class="display-3 font-weight-medium">Whats
+                                    up!
+                                    bruh 😜</p>
                                 <p class="display-2"> I'm a Software developer
-                                    😜</p>
+                                    ✌</p>
                                 <p>Slide to know more of me</p>
 
                             </v-flex>
                             <v-flex xs12 xl6>
-                                <v-avatar :size="500">
+                                <v-avatar :size="550">
                                     <img
-                                        src="background.svg"
+                                        src="me3.png"
                                         alt="profile photo">
                                 </v-avatar>
                             </v-flex>
-                        </v-layout>
-                    </v-container>
 
-                    <v-container>
-                        <v-layout>
-                            <v-flex>
-
+                            <v-flex xs12 xl4 mt-5>
                                 <v-card
-                                    class="mx-auto"
+                                    class="mx-auto headline"
+                                    color="black"
+                                    height="250"
+                                    dark>
+                                    <v-card-title>
+                                        <span class="title font-weight-light">Github
+                                            data</span>
+                                    </v-card-title>
+
+                                    <v-card-text class="headline">
+                                        Profile username: #num
+                                        <br>
+                                        Repositories: #num
+                                        <br>
+                                        Contributions: #num
+                                        <br>
+                                        URL: url
+                                    </v-card-text>
+                                </v-card>
+                            </v-flex>
+                            <v-flex xs12 xl4 mt-5>
+                                <v-card
+                                    class="mx-auto headline"
+                                    color="black"
+                                    height="250"
+                                    dark>
+                                    <v-card-title>
+                                        <span class="title font-weight-light">Projects
+                                            done</span>
+                                    </v-card-title>
+
+                                    <v-card-text class="headline">
+                                        Desktop apps: 1 <br>
+                                        Mobile apps: 2 <br>
+                                        Websites: 1 <br>
+                                        Frameworks: 2
+                                    </v-card-text>
+                                </v-card>
+                            </v-flex>
+                            <v-flex xs12 xl4 mt-5>
+                                <v-card
+                                    class="mx-auto headline"
+                                    height="250">
+                                    <v-card-title>
+                                        <span class="title font-weight-light">Contact</span>
+                                    </v-card-title>
+                                    <v-card-text class="headline">
+                                        email: email@email.com
+                                        <br>
+                                        cellphone: +52 987 113 73 49
+                                        <br>
+                                        Linkedin: url profile
+                                    </v-card-text>
+                                </v-card>
+                            </v-flex>
+
+                            <v-flex xs12 mt-5>
+                                <v-card
+                                    class="mx-auto headline"
                                     color="#26c6da"
                                     dark>
                                     <v-card-title>
-                                        <span class="title font-weight-light">Twitter</span>
+                                        <span class="title font-weight-light">About
+                                            me</span>
                                     </v-card-title>
 
-                                    <v-card-text class="headline
-                                        font-weight-bold">
-                                        "Turns out semicolon-less style is
-                                        easier and safer
-                                        in TS because most gotcha edge cases are
-                                        type
-                                        invalid as well."
+                                    <v-card-text class="headline">
+                                        I am a freshman at the autonomous
+                                        university of Yucatán in the faculty of
+                                        mathematics.
+                                        <br>
+                                        Since i was 12 years old. I am a
+                                        technology student, at that age I
+                                        attended web development courses.
+                                        <br>
+                                        At the age of 15 years i developed my
+                                        first Java framework with
+                                        MVC architecture and OOP, at the age of
+                                        17 years. Second framework in PHP that
+                                        uses the MVC, OOP and PDO Connection
+                                        architecture, all ending up being a
+                                        personal open source project.
+                                        <br>
+                                        I
+                                        participated in the "Prototype Contest
+                                        2017", occupying the first place in the
+                                        Software area of ​​Quintana Roo and
+                                        ranked nationally as one of the 20 top.
+                                        <br>
+                                        My interests are simple, software
+                                        development, urban running and being
+                                        surrounded by successful people.
                                     </v-card-text>
-
-
                                 </v-card>
                             </v-flex>
                         </v-layout>
@@ -98,6 +178,8 @@
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+
         <script>
     new Vue({ el: '#app',
     data: () => ({
@@ -106,6 +188,8 @@
     props: {
       source: String
     }})
+
+    ScrollReveal().reveal('.headline', { delay: 500 });
   </script>
     </body>
 </html>
