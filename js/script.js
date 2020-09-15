@@ -31,7 +31,7 @@ setTimeout(() => {
 setTimeout(() => {
   document.getElementById(
     "console"
-  ).innerHTML += `<p class="breakline"> GET RESPONSE [200]: {'networks': ['<a href="http://" target="_blank" rel="noopener noreferrer">LinkedIn</a>', '<a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a>']} </p>`;
+  ).innerHTML += `<p class="breakline"> GET RESPONSE [200]: {'networks': ['<a href="https://www.linkedin.com/in/luis-gerardo-leon-ortega-5054a3171/" target="_blank" rel="noopener noreferrer">LinkedIn</a>', '<a href="https://github.com/luislortega" target="_blank" rel="noopener noreferrer">GitHub</a>']} </p>`;
 }, 13000);
 
 setTimeout(() => {
