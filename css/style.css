@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Cousine);
+body {
+  font-family: "Cousine", "monospace";
+  color: #00ff66;
+  background-color: black;
+}
+a {
+  color: #00ff66;
+}
+#console {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 60%;
+  margin: 0;
+  background-color: #000000;
+  border-color: white;
+  border-style: solid;
+  border-top-width: 30px;
+  border-left-width: 30px;
+  border-right-width: 30px;
+  border-bottom-width: 60px;
+  border-radius: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 0px 7px #928771, inset 0 0 0px 12px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  padding-bottom: 10px;
+}
+#console p {
+  position: relative;
+  font-family: "Cousine", "monospace";
+  font-size: 14px;
+  padding-left: 30px;
+  padding-bottom: 0;
+  display: block;
+  margin: 0;
+}
+#console p:nth-child(1) {
+  margin-top: 25px;
+}
+#console p.breakline {
+  padding-bottom: 12px;
+}
+#console::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 10px;
+  background-color: #343434;
+  right: 20px;
+  bottom: -35px;
+}
+#console::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #343434;
+  right: 5px;
+  bottom: -32px;
+}
+img {
+  position: absolute;
+  width: 20vw;
+  left: 38%;
+  border-radius: 50%;
+}

@@ -1,3 +1,2 @@
-# Portafolio-site
-Personal webpage deployable to Heroku
-
+# Portafolio
+I did it out of boredom
