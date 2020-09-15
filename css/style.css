@@ -43,25 +43,7 @@ a {
 #console p.breakline {
   padding-bottom: 12px;
 }
-#console::before {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 10px;
-  background-color: #343434;
-  right: 20px;
-  bottom: -35px;
-}
-#console::after {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 6px;
-  background-color: #343434;
-  right: 5px;
-  bottom: -32px;
-}
+
 img {
   position: absolute;
   width: 20vw;

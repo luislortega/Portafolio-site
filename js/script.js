@@ -36,6 +36,6 @@ setTimeout(() => {
 
 setTimeout(() => {
   document.getElementById("console").innerHTML += ` <p class="breakline"></p>
-      <p class="breakline"> Connection closed.</p>
+      <p class="breakline"> Connection closed. ❌</p>
       <p class="breakline"></p>`;
 }, 15000);
