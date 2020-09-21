@@ -26,7 +26,7 @@ setTimeout(() => {
 setTimeout(() => {
   document.getElementById(
     "console"
-  ).innerHTML += `<p class="breakline"> GET RESPONSE [200]: {'roles': ['BackEnd', 'FrontEnd', 'CiberSecurity', 'Gamer', 'Hacker']} </p>`;
+  ).innerHTML += `<p class="breakline"> GET RESPONSE [200]: {'roles': ['BackEnd', 'FrontEnd', 'CyberSecurity', 'Gamer', 'Hacker']} </p>`;
 }, 11000);
 setTimeout(() => {
   document.getElementById(
