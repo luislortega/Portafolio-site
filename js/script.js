@@ -16,7 +16,7 @@ setTimeout(() => {
 setTimeout(() => {
   document.getElementById(
     "console"
-  ).innerHTML += `<p class="breakline"> GET RESPONSE [200]: {'name':'Luis Gerardo Leon Ortega', 'age':'21', 'pasion':'Software Development'} </p>`;
+  ).innerHTML += `<p class="breakline"> GET RESPONSE [200]: {'name':'Luis Gerardo Leon Ortega', 'age':'21', 'passion':'Software Development'} </p>`;
 }, 7000);
 setTimeout(() => {
   document.getElementById(
